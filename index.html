@@ -14,19 +14,24 @@
 <p><b>Web Developer</b></p>
 <p>I design modern websites for small businesses.</p>
 
+<style>
 button {
-  background: #38bdf8;
+  background: linear-gradient(135deg, #22d3ee, #0ea5e9);
+  color: #020617;
   border: none;
-  padding: 12px 25px;
-  border-radius: 20px;
-  font-size: 16px;
-  cursor: pointer;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px #38bdf8;
+  transition: 0.3s;
 }
 
 button:hover {
-  background: #0ea5e9;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #38bdf8;
 }
-<style>
+
 body {
   background: #0f172a;
   color: white;
@@ -39,7 +44,11 @@ h1 {
 }
 
 h2 {
-  color: #38bdf8;
+  color: #22d3ee;
+}
+hr {
+  border: 1px solid #38bdf8;
+  margin: 20px 0;
 }
 
 p {
@@ -54,9 +63,23 @@ p {
 <h1>Hello, I am Anshu</h1>
 <h2>I love playing Football</h2>
 <p>This is my first website.</p>
-<button onclick="alert('Thank you for contacting me!')">Hire Me</button>
+<button onclick="showContact()">Hire Me</button>
+<div id="contact" style="display:none;">
+<hr>
+<h2>Contact Me</h2>
+<p>WhatsApp: 9853775224</p>
+<p>Email: ap6560481@gmail.com</p>
+<hr>
+<h2>My Services</h2>
+<p>✔ Personal Website</p>
+<p>✔ Business Website</p>
+<p>✔ Landing Page Design</p>
+<p>✔ Mobile Friendly Design</p>
 <div/div>
+<script>
+function showContact(){
+  document.getElementById("contact").style.display="block";
+}
+</script>
 </body>
 </html>
-
-  
